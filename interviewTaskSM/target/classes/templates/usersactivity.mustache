@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Активность пользователей за час</title>
+</head>
+<body>
+<h1>Активность пользователей за час:</h1>
+<table style="width:100%" border="1">
+    <tr align="center">
+        <th>ssoid  пользователя</th>
+        <th>Form IDs</th>
+    </tr>
+    <tr>
+        <td>
+            {{#noDublicateResult}}
+                <div style="height: 20px;"   >
+                    <h4 style="border: solid 1px black">{{this}}</h4>
+                </div>
+            {{/noDublicateResult}}
+        </td>
+        <td>
+            {{#count}}
+                <div style="height:20px;">
+                    <h4 style="border: solid 1px black">{{this}}</h4>
+                </div>
+            {{/count}}
+        </td>
+    </tr>
+</table>
+</body>
+</html>

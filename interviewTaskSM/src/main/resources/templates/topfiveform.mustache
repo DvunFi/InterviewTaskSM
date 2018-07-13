@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Активность пользователей за час</title>
+</head>
+<body>
+<h1>Топ 5 используемых форм:</h1>
+<table style="width:100%" border="1">
+    <tr>
+        <th>id  формы</th>
+        <th>Количесвтов использований</th>
+    </tr>
+    <tr>
+        <td align="center">
+            {{#noDublicateResult}}
+                <div style="height: 20px "  >
+                    <h4 style="border: solid 1px black"></h4> {{this}}
+                </div>
+            {{/noDublicateResult}}
+        </td>
+        <td align="center">
+            {{#count}}
+                <div style="height: 20px ">
+                    <h4 style="border: solid 1px black">{{this}}</h4>
+                </div>
+            {{/count}}
+        </td>
+    </tr>
+</table>
+</body>
+</html>
